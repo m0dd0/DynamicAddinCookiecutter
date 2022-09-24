@@ -16,3 +16,12 @@ LOGGING_ROTATE_COUNT = 20
 {{cookiecutter.command_name.upper()}}_PANEL_ID = "{{cookiecutter.panel_id}}"
 {{cookiecutter.command_name.upper()}}_COMMAND_NAME = "{{cookiecutter.command_name}}"
 {{cookiecutter.command_name.upper()}}_TOOLTIP = "{{cookiecutter.tooltip}}"
+
+{{cookiecutter.command_name.upper()}}_DIRECT_DESIGN_QUESTION = (
+    "WARNING: {{cookiecutter.command_name}} can only be played in direct design mode.\n"
+    + "Do you want to switch to direct design mode by disabling the timeline?\n\n"
+    + "The timeline and all design history will be removed, \n"
+    + "and further operations will not be captured in the timeline."
+)
+{{cookiecutter.command_name.upper()}}_PROGRESSBAR_TITLE = "Updating Screen"
+{{cookiecutter.command_name.upper()}}_MIN_VOXELS_FOR_PROGRESSBAR = 15
