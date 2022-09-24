@@ -15,6 +15,17 @@ subprocess.run(
     ],
     cwd="./addin/libs",
 )
+subprocess.run(
+    [
+        "git",
+        "submodule",
+        "add",
+        "-b",
+        "develop",
+        "https://github.com/m0dd0/voxler.git",
+    ],
+    cwd="./addin/libs",
+)
 # git submodule update --init --recursive
 subprocess.run(["git", "add", "*"])
 subprocess.run(
